@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       isNightTheme: false,
-      themeToggleText: "Dark Mode"
+      themeToggleText: "Dark"
     };
   },
   computed: {
@@ -37,9 +37,9 @@ export default {
     changeTheme() {
       this.isNightTheme = !this.isNightTheme;
       if (this.isNightTheme) {
-        this.themeToggleText = "Light Mode";
+        this.themeToggleText = "Light";
       } else {
-        this.themeToggleText = "Dark Mode";
+        this.themeToggleText = "Dark";
       }
       this.$store.commit("setThemeType", this.isNightTheme);
     }
@@ -65,10 +65,10 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   align-items: baseline;
   justify-content: space-around;
+  padding: 15px 5px;
 }
 
 .nav {
-  padding: 15px;
   text-align: center;
 }
 
@@ -86,7 +86,7 @@ nav a.router-link-exact-active {
 .app-name {
   color: orangered;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .theme-mode {

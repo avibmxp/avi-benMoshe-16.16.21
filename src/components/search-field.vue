@@ -1,6 +1,6 @@
 <template>
   <div class="row search-wrapper">
-    <div class="col-10">
+    <div class="col-9">
       <input type="text" class="search-field" :placeholder="placeholder" v-model="cityToSearch" />
       <div class="col-11 search-options">
         <SearchFieldOption
@@ -11,7 +11,7 @@
         ></SearchFieldOption>
       </div>
     </div>
-    <input type="button" class="col-2 search-btn" @click="search" v-bind:value="btnName" />
+    <input type="button" class="col-3 search-btn" @click="search" v-bind:value="btnName" />
   </div>
 </template>
 
@@ -245,6 +245,7 @@ export default {
   background: #2c3e50;
   color: #ffffff;
   cursor: pointer;
+  padding: 10px;
 }
 
 .search-btn:hover {

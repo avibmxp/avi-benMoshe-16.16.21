@@ -8,7 +8,7 @@
       </div>
       <div class="col"></div>
     </div>
-    <div class="row col-12">
+    <div class="row col-12 m-0">
       <div class="col"></div>
       <div class="col-10">
         <Forecasts />
